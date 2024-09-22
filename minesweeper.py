@@ -192,7 +192,6 @@ def findSquare(coordinate):
         
 #This function is called when the user right-clicks on a square.
 #Checks if the square is opened first, and if it isn't, the square is marked with red.
-#
 def flag(coordinate):
     if coordinate not in squaresOpened:
         rect = pygame.Rect(coordinate[0], coordinate[1], squareSize, squareSize)
@@ -202,6 +201,5 @@ def flag(coordinate):
         else:
             squaresFlagged.remove(coordinate)
             pygame.draw.rect(SCREEN, "dark gray", rect)
- 
-        
+       
 main()
