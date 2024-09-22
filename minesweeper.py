@@ -202,5 +202,6 @@ def flag(coordinate):
         else:
             squaresFlagged.remove(coordinate)
             pygame.draw.rect(SCREEN, "dark gray", rect)
+ 
         
 main()
